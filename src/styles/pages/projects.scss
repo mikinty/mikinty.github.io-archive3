@@ -1,0 +1,38 @@
+#projects {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+
+    .grid-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .grid-element {
+        overflow: hidden;
+        width: 40vw;
+        padding: 12px;
+
+        .grid-picture {
+          height: 30vw;
+          background-position: left;
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          transition-duration: 500ms;
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        .grid-header {
+          margin-top: 8px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
