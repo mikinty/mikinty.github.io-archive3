@@ -2,6 +2,7 @@ import React from "react";
 import { HashRouter as Router } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { PROJECT_GRID } from "./data.js";
+import FoodPage from "./pages/FoodPage.js";
 
 /**
  * This is the highest level of the web app.
@@ -69,10 +70,7 @@ class App extends React.Component {
           properties in Manhattan. Check out NYC LUX, a Streeteasy competitor
           that focuses on providing high quality listings!
         </div>
-        <div className="page" id="foodwine">
-          Always looking for a special way to enjoy life. Yelp Elite WSET II
-          Vivino
-        </div>
+        <FoodPage />
       </Router>
     );
   }

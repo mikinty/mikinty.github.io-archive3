@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-html, body {
+html,
+body {
   margin: 0;
   background: rgb(2, 19, 43);
   color: white;
@@ -9,15 +10,16 @@ html, body {
   &::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-a:hover,
-a:visited,
 a:link,
-a:active {
-  text-decoration: none;
+a:visited {
+  color: white;
 }
 
 
@@ -47,6 +49,7 @@ a:active {
         opacity: 0.8;
         transition: 0.5s;
         font-size: 3vw;
+        text-decoration: none;
 
         &:hover {
           opacity: 1;
