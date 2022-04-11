@@ -7,9 +7,10 @@ const YELP_BOOKMARKS_LINK =
   "https://www.yelp.com/collection/VroHKUR8qiIAmmFpJ3R2Bw/My-Bookmarks";
 const YELP_NYC_PICKS =
   "https://www.yelp.com/collection/d8-pUMIxcsXeA9UHux76jQ/NYElite";
+const WINE_BUYING_GUIDE = "https://github.com/mikinty/wine-buying-guide";
 
 /**
- * This is the highest level of the web app.
+ * This page talks about food and wine.
  */
 class FoodPage extends React.Component {
   render() {
@@ -30,9 +31,17 @@ class FoodPage extends React.Component {
             </li>
           </ul>
           <li>
-            <a href={VIVINO_LINK}>Vivino</a>
+            Wine:
+            <ul>
+              <li>
+                <a href={VIVINO_LINK}>Vivino</a>
+              </li>
+              <li>
+                <a href={WINE_BUYING_GUIDE}>Wine Buying Guide</a>
+              </li>
+              <li>currently studying WSET III.</li>
+            </ul>
           </li>
-          : Big wine fan, currently studying WSET III.
         </ul>
       </div>
     );
