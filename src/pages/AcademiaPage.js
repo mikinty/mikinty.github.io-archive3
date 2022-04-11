@@ -3,6 +3,15 @@ import React from "react";
 const COURSES = {
   2022: [
     {
+      name: "Compiler Design (CMU) W!",
+    },
+    {
+      name: "Foundations of Programming Languages (CMU) W!",
+    },
+    {
+      name: "Distributed Systems (CMU) W!",
+    },
+    {
       name: "Market Wizards Series by Jack D. Schwager: Trading psychology, stories, and techniques. Great interviews from even greater traders.",
       link: "https://github.com/mikinty/Trading-Curriculum#core-concepts",
     },
