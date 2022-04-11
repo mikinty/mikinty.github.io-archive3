@@ -3,15 +3,19 @@ import React from "react";
 const COURSES = {
   2022: [
     {
-      name: "Market Wizards Series by Jack D. Schwager",
+      name: "Market Wizards Series by Jack D. Schwager: Trading psychology, stories, and techniques. Great interviews from even greater traders.",
       link: "https://github.com/mikinty/Trading-Curriculum#core-concepts",
     },
     {
-      name: "Understanding Cryptography (WIP)",
+      name: "Understanding Cryptography (WIP): Wanted to see what is safe and not safe out there...",
       link: "https://amzn.to/3JrQLCA",
     },
     {
-      name: "WSET III (WIP)",
+      name: "WSET III (WIP): Learning more about wine woo",
+    },
+    {
+      name: "System Design Interview: A great overview on what questions to expect on system design interviews",
+      link: "https://amzn.to/3jpApQd",
     },
     {
       name: "Macroeconomics by Mankiw (Intro)",
@@ -90,6 +94,7 @@ class AcademiaPage extends React.Component {
   render() {
     return (
       <div className="page" id="academia">
+        <h1>Check out what I've been up to...</h1>
         {this.renderCourses()}
       </div>
     );
