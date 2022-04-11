@@ -2,6 +2,7 @@ import React from "react";
 import { HashRouter as Router } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { PROJECT_GRID } from "./data.js";
+import AcademiaPage from "./pages/AcademiaPage.js";
 import FoodPage from "./pages/FoodPage.js";
 
 /**
@@ -59,6 +60,9 @@ class App extends React.Component {
               <HashLink className="link" to="#foodwine" smooth={true}>
                 Food & Wine
               </HashLink>
+              <HashLink className="link" to="#academia" smooth={true}>
+                Timeline
+              </HashLink>
             </div>
           </div>
         </div>
@@ -71,6 +75,7 @@ class App extends React.Component {
           that focuses on providing high quality listings!
         </div>
         <FoodPage />
+        <AcademiaPage />
       </Router>
     );
   }
