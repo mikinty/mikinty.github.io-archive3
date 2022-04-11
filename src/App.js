@@ -58,14 +58,14 @@ class App extends React.Component {
               <HashLink className="link" to="#projects" smooth={true}>
                 Projects
               </HashLink>
-              <HashLink className="link" to="#realestate" smooth={true}>
-                Real Estate
+              <HashLink className="link" to="#academia" smooth={true}>
+                Timeline
               </HashLink>
               <HashLink className="link" to="#foodwine" smooth={true}>
                 Food & Wine
               </HashLink>
-              <HashLink className="link" to="#academia" smooth={true}>
-                Timeline
+              <HashLink className="link" to="#realestate" smooth={true}>
+                Real Estate
               </HashLink>
             </div>
           </div>
@@ -73,13 +73,19 @@ class App extends React.Component {
         <div className="page" id="projects">
           <div className="grid">{this.createGrid(PROJECT_GRID)}</div>
         </div>
+        <AcademiaPage />
+        <FoodPage />
         <div className="page" id="realestate">
           Licensed Real Estate Salesperson for NY, specializing in luxury
-          properties in Manhattan. Check out NYC LUX, a Streeteasy competitor
-          that focuses on providing high quality listings!
+          properties in Manhattan. If you want me to help you find your next
+          place in NYC, leveraging technology and data analysis, please contact
+          me. More about my services at this{" "}
+          <a href="https://github.com/mikinty/real-estate-salesperson/blob/main/collecting_commission.md">
+            this article
+          </a>
+          . Currently working on a scraper to get the latest rental prices from
+          certain websites...
         </div>
-        <FoodPage />
-        <AcademiaPage />
       </Router>
     );
   }

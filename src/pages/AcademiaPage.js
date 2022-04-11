@@ -8,6 +8,7 @@ const COURSES = {
     },
     {
       name: "Understanding Cryptography (WIP)",
+      link: "https://amzn.to/3JrQLCA",
     },
     {
       name: "WSET III (WIP)",
@@ -26,6 +27,10 @@ const COURSES = {
     },
   ],
   2021: [
+    {
+      name: "Trading Psychology and Basic Concepts",
+      link: "https://github.com/mikinty/Trading-Curriculum#introductory",
+    },
     {
       name: "Real Estate Salesperson (NY)",
       link: "https://github.com/mikinty/real-estate-salesperson",
