@@ -52,15 +52,16 @@ const COURSES = {
  */
 class AcademiaPage extends React.Component {
   renderCourseLink(courseElement) {
+    let listElement = <div>{courseElement.name}</div>;
     if (courseElement.link != undefined) {
-      return (
+      listElement = (
         <a href={courseElement.link} target="_blank">
           {courseElement.name}
         </a>
       );
     }
 
-    return <div>{courseElement.name}</div>;
+    return <li key={courseElement.name}>{listElement}</li>;
   }
 
   renderCourses() {
@@ -68,7 +69,7 @@ class AcademiaPage extends React.Component {
 
     for (const [year, courses] of Object.entries(COURSES)) {
       items.push([
-        <div>
+        <div key={year}>
           {year}:<ul>{courses.map(this.renderCourseLink)}</ul>
         </div>,
         year,

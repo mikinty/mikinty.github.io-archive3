@@ -11,7 +11,7 @@ import FoodPage from "./pages/FoodPage.js";
 class App extends React.Component {
   createGridElement(element) {
     return (
-      <div className="grid-element">
+      <div className="grid-element" key={element.name}>
         <a href={element.url} target="_blank">
           <div
             className="grid-picture"
@@ -38,7 +38,11 @@ class App extends React.Component {
             ]
           : this.createGridElement(gridElements[i]);
 
-      gridResult.push(<div className="grid-row">{rowElements}</div>);
+      gridResult.push(
+        <div className="grid-row" key={i}>
+          {rowElements}
+        </div>
+      );
     }
 
     return gridResult;
