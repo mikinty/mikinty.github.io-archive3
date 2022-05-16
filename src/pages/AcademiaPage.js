@@ -3,13 +3,16 @@ import React from "react";
 const COURSES = {
   2022: [
     {
-      name: "Compiler Design (CMU) W!",
+      name: "Technical Analysis of the Financial Markets: Seeing what tools people use to analyze price action; is it all astrology?",
+      link: "https://amzn.to/3yEdrxu",
     },
     {
-      name: "Foundations of Programming Languages (CMU) W!",
+      name: "Reminiscences of a Stock Operator: Learning about market psychology",
+      link: "https://amzn.to/3lbRvlp",
     },
     {
-      name: "Distributed Systems (CMU) W!",
+      name: "Guide to Competitive Programming: Learning and Improving Algorithms Through Contests",
+      link: "https://amzn.to/3lbdlFV",
     },
     {
       name: "Market Wizards Series by Jack D. Schwager: Trading psychology, stories, and techniques. Great interviews from even greater traders.",
@@ -28,7 +31,7 @@ const COURSES = {
     },
     {
       name: "Macroeconomics by Mankiw (Intro)",
-      link: "https://www.amazon.com/dp/1319105998/ref=as_sl_pc_tf_til?tag=viriditybooks-20&linkCode=w00&linkId=8fe7ff5587c1d0409ac65a3da154a41b&creativeASIN=1319105998",
+      link: "https://amzn.to/3Mj6CWe",
     },
     {
       name: "Statistics (Intro level)",
