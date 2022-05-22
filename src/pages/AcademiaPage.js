@@ -3,6 +3,10 @@ import React from "react";
 const COURSES = {
   2022: [
     {
+      name: "Number Sense: Math tricks to help solve arithmetic quickly",
+      link: "http://bowenpeters.weebly.com/uploads/8/1/1/9/8119969/numbersense.pdf",
+    },
+    {
       name: "Technical Analysis of the Financial Markets: Seeing what tools people use to analyze price action; is it all astrology?",
       link: "https://amzn.to/3yEdrxu",
     },
