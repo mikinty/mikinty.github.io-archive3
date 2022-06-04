@@ -3,8 +3,23 @@ import React from "react";
 const COURSES = {
   2022: [
     {
+      name: "Big Debt Crises: Macro before and after the bubble",
+      link: "https://amzn.to/3GPM4Tb",
+    },
+    {
+      name: "Principles of Mathematical Analysis: Learning some more analysis...",
+      link: "https://amzn.to/3awmSW0",
+      additional_links: {
+        solutions: "https://github.com/mikinty/Baby-Rudin-Solutions",
+      },
+    },
+    {
+      name: "Freakonomics: Re-reading this book. Really helps with understanding correlation vs causation.",
+      link: "https://amzn.to/3NrENM8",
+    },
+    {
       name: "Number Sense: Math tricks to help solve arithmetic quickly",
-      link: "http://bowenpeters.weebly.com/uploads/8/1/1/9/8119969/numbersense.pdf",
+      link: "http://bryantheath.com/number-sense-tricks-manual/",
     },
     {
       name: "Technical Analysis of the Financial Markets: Seeing what tools people use to analyze price action; is it all astrology?",
@@ -23,11 +38,15 @@ const COURSES = {
       link: "https://github.com/mikinty/Trading-Curriculum#core-concepts",
     },
     {
-      name: "Understanding Cryptography (WIP): Wanted to see what is safe and not safe out there...",
+      name: "Understanding Cryptography: How to communicate securely and prevent cryptographic attacks",
       link: "https://amzn.to/3JrQLCA",
     },
     {
-      name: "WSET III (WIP): Learning more about wine woo",
+      name: "WSET III: Learning more about wine...diploma next?",
+      additional_links: {
+        "wine buying guide": "https://github.com/mikinty/wine-buying-guide",
+        notes: "https://github.com/mikinty/wine-education",
+      },
     },
     {
       name: "System Design Interview: A great overview on what questions to expect on system design interviews",
@@ -65,8 +84,12 @@ const COURSES = {
   ],
   2020: [
     {
-      name: "Real Analysis I",
-      link: "https://github.com/mikinty/Understanding-Analysis-Abbott-Solutions",
+      name: "Understanding Analysis: Real Analysis I",
+      link: "https://amzn.to/3Nq0qMD",
+      additional_links: {
+        solutions:
+          "https://github.com/mikinty/Understanding-Analysis-Abbott-Solutions",
+      },
     },
   ],
 };
@@ -86,7 +109,25 @@ class AcademiaPage extends React.Component {
       );
     }
 
-    return <li key={courseElement.name}>{listElement}</li>;
+    const additional_links =
+      courseElement.additional_links != undefined ? (
+        <div>
+          {Object.entries(courseElement.additional_links).map((entry) => (
+            <a href={entry[1]} style={{ marginLeft: 12 }} key={entry[0]}>
+              ({entry[0]})
+            </a>
+          ))}
+        </div>
+      ) : null;
+
+    return (
+      <li key={courseElement.name}>
+        <div className="li_academia">
+          {listElement}
+          {additional_links}
+        </div>
+      </li>
+    );
   }
 
   renderCourses() {
