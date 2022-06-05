@@ -113,7 +113,12 @@ class AcademiaPage extends React.Component {
       courseElement.additional_links != undefined ? (
         <div>
           {Object.entries(courseElement.additional_links).map((entry) => (
-            <a href={entry[1]} style={{ marginLeft: 12 }} key={entry[0]}>
+            <a
+              href={entry[1]}
+              target="_blank"
+              style={{ marginLeft: 12 }}
+              key={entry[0]}
+            >
               ({entry[0]})
             </a>
           ))}
