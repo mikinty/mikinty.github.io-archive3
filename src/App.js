@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { PROJECT_GRID } from "./data.js";
 import AcademiaPage from "./pages/AcademiaPage.js";
