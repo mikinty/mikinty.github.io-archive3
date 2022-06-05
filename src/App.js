@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { PROJECT_GRID } from "./data.js";
 import AcademiaPage from "./pages/AcademiaPage.js";
@@ -50,7 +50,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <div>
         <div className="page" id="main">
           <div id="splash">
             <div id="name">Michael You</div>
@@ -86,7 +86,7 @@ class App extends React.Component {
           . Currently working on a scraper to get the latest rental prices from
           certain websites...
         </div>
-      </Router>
+      </div>
     );
   }
 }
