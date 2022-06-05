@@ -34,6 +34,10 @@ const COURSES = {
       link: "https://amzn.to/3lbdlFV",
     },
     {
+      name: "The Art and Craft of Problem Solving: Competition Math skills for High School and intro to College",
+      link: "https://amzn.to/3GS0lyQ",
+    },
+    {
       name: "Market Wizards Series by Jack D. Schwager: Trading psychology, stories, and techniques. Great interviews from even greater traders.",
       link: "https://github.com/mikinty/Trading-Curriculum#core-concepts",
     },
