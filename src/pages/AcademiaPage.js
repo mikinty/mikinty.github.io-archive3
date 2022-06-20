@@ -3,19 +3,30 @@ import React from "react";
 const COURSES = {
   2022: [
     {
+      name: "Linear Algebra Done Right: Learning linalg again...pure math edition",
+      link: "https://amzn.to/3N4dfvg",
+      additional_links: {
+        solutions: "https://github.com/mikinty/Axler-Linear-Algebra-Solutions",
+      },
+    },
+    {
+      name: "Hillbilly Elegy: A famous book about how tough it is to come up from the American Appalachia",
+      link: "https://amzn.to/3y258uS",
+    },
+    {
       name: "Big Debt Crises: Macro before and after the bubble",
-      link: "https://amzn.to/3GPM4Tb",
+      link: "https://amzn.to/3mYI3mz",
     },
     {
       name: "Principles of Mathematical Analysis: Learning some more analysis...",
-      link: "https://amzn.to/3awmSW0",
+      link: "https://amzn.to/3y4joDh",
       additional_links: {
         solutions: "https://github.com/mikinty/Baby-Rudin-Solutions",
       },
     },
     {
       name: "Freakonomics: Re-reading this book. Really helps with understanding correlation vs causation.",
-      link: "https://amzn.to/3NrENM8",
+      link: "https://amzn.to/3y6bGbY",
     },
     {
       name: "Number Sense: Math tricks to help solve arithmetic quickly",
@@ -23,19 +34,19 @@ const COURSES = {
     },
     {
       name: "Technical Analysis of the Financial Markets: Seeing what tools people use to analyze price action; is it all astrology?",
-      link: "https://amzn.to/3yEdrxu",
+      link: "https://amzn.to/3xBynDj",
     },
     {
       name: "Reminiscences of a Stock Operator: Learning about market psychology",
-      link: "https://amzn.to/3lbRvlp",
+      link: "https://amzn.to/3n3IlIS",
     },
     {
       name: "Guide to Competitive Programming: Learning and Improving Algorithms Through Contests",
-      link: "https://amzn.to/3lbdlFV",
+      link: "https://amzn.to/3QvT4t0",
     },
     {
       name: "The Art and Craft of Problem Solving: Competition Math skills for High School and intro to College",
-      link: "https://amzn.to/3GS0lyQ",
+      link: "https://amzn.to/3bcXKnx",
     },
     {
       name: "Market Wizards Series by Jack D. Schwager: Trading psychology, stories, and techniques. Great interviews from even greater traders.",
@@ -43,7 +54,7 @@ const COURSES = {
     },
     {
       name: "Understanding Cryptography: How to communicate securely and prevent cryptographic attacks",
-      link: "https://amzn.to/3JrQLCA",
+      link: "https://amzn.to/3N5rLCV",
     },
     {
       name: "WSET III: Learning more about wine...diploma next?",
@@ -54,15 +65,15 @@ const COURSES = {
     },
     {
       name: "System Design Interview: A great overview on what questions to expect on system design interviews",
-      link: "https://amzn.to/3jpApQd",
+      link: "https://amzn.to/3OvL1L3",
     },
     {
       name: "Macroeconomics by Mankiw (Intro)",
-      link: "https://amzn.to/3Mj6CWe",
+      link: "https://amzn.to/3N6JDgK",
     },
     {
       name: "Statistics (Intro level)",
-      link: "https://amzn.to/3LPkXKc",
+      link: "https://amzn.to/3OnhZNx",
     },
     {
       name: "Intro to Accounting",
@@ -89,7 +100,7 @@ const COURSES = {
   2020: [
     {
       name: "Understanding Analysis: Real Analysis I",
-      link: "https://amzn.to/3Nq0qMD",
+      link: "https://amzn.to/3y4T4sP",
       additional_links: {
         solutions:
           "https://github.com/mikinty/Understanding-Analysis-Abbott-Solutions",
