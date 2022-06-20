@@ -10,6 +10,18 @@ const COURSES = {
       },
     },
     {
+      name: "The Black Swan: Taleb explains fat tails",
+      link: "https://amzn.to/3HzASdY",
+    },
+    {
+      name: "Fooled by Randomness: Taleb explains why humans are bad at EV",
+      link: "https://amzn.to/3y4eOEZ",
+    },
+    {
+      name: "More Than You Know: Behavioral Theory in the context of financial markets",
+      link: "https://amzn.to/3xx1NSQ",
+    },
+    {
       name: "Hillbilly Elegy: A famous book about how tough it is to come up from the American Appalachia",
       link: "https://amzn.to/3y258uS",
     },
